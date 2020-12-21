@@ -5,21 +5,25 @@
     <title>형포를 좋아하는 Bee series </title>
 </head>
 <body>
-    <a href="index.html"><h1>형포 D 티치 프로젝트</h1></a>
-    <ol>
-        <li><a href="bumblebee.html">Bumblebee</li></a>
-        <li><a href="honeybee.html">Honey bee</li></a>
-        <li><a href="hornet.html">Hornet</li></a>
-    </ol>
-    <h2>형포</h2>
-    <p><strong>나(형포)</strong>는 <i>bee들에게</i>을 이쁨을 받는다. 앞으로 더욱더 모든 bee들이 나에게 오도록, 나만의 <b>세상</b>을 만들어볼 게획이다.<br>bee들과 함께라면 무엇이든 가능하리라 믿는다. 이리오너라 블랙홀! <em><u>제하하핳하!</u></em>
-    </p>
-    <p>나의 명대사: 나를 지금 바보로 아는거↗야↘ </p>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tJzub5G_0rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
-    <p>내가 누구냐구? <em><a href="https://namu.wiki/w/%EB%A7%88%EC%83%AC%20D.%20%ED%8B%B0%EC%B9%98" title="마샬 D 티치란? 백과사전" target="_blank">여기</em></a>를 클릭해봐
-    </p>
-    <img src="tichi.jpg" width="30%">
+    <a href="index.html"></a><h1>형포 D 티치 프로젝트</h1></a>
+    <div id="grid">
+        <ol>
+            <li><a href="index.html">Main</li></a>
+            <li><a href="bumblebee.html">Bumblebee</li></a>
+            <li><a href="honeybee.html">Honey bee</li></a>
+            <li><a href="hornet.html">Hornet</li></a>
+        </ol>
+        <div id="article">
+            
+            <h2><img src="tichi.jpg" width="35%">형포</h2>
+            <p><strong>나(형포)</strong>는 <i>bee들에게</i>을 이쁨을 받는다. 앞으로 더욱더 모든 bee들이 나에게 오도록, 나만의 <b>세상</b>을 만들어볼 계획이다.<br>bee들과 함께라면 무엇이든 가능하리라 믿는다. 이리오너라 블랙홀! <em>제하하핳하!</em> <a href="https://namu.wiki/w/%EB%A7%88%EC%83%AC%20D.%20%ED%8B%B0%EC%B9%98" title="형포 D 티치" target="_blank" style="color: cornflowerblue;"><u><더 자세히 알기(클릭)></u></a>
+            </p>
+            <p>나의 명대사: 나를 지금 바보로 아는거↗야↘ </p>
+            <p><iframe width="360" height="315" src="https://www.youtube.com/embed/tJzub5G_0rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+        </div>
+    </div>
     <!--
     <table border="1">
         <th>테이블</th>
@@ -49,8 +53,47 @@
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </p>
 </body>
-
 <style>
+    body {
+        margin: 0;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+        border-right: black solid 2px;
+        width: 120px;
+        margin: 0;
+        padding-top: 13px;
+        padding-left: 26px;
+    }
+    #article {
+        padding-left: 20px;
+    }
+    #grid li{
+
+        padding: 3px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: black;
+        text-decoration: none;
+        margin:0;
+        border-bottom: black solid 2px;
+        padding: 40px;
+        text-decoration: none;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+
+<!--
+<style>
+
 h1 {
     text-align: center;
     color: sienna;
@@ -67,8 +110,6 @@ strong {
     font-size: 20px;
     color: saddlebrown;
 }
-
-
 </style>
-
+-->
 </html>
