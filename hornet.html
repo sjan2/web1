@@ -6,18 +6,22 @@
 </head>
 <body>
     <a href="index.html"><h1>형포 D 티치 프로젝트</h1></a>
-    <ol>
-        <li><a href="index.html">Main</li></a>
-        <li><a href="bumblebee.html">Bumblebee</li></a>
-        <li><a href="honeybee.html">Honey bee</li></a>
-        <li><a href="hornet.html" style="color: red; text-decoration: underline;"><strong>Hornet</strong></li></a>
-    </ol>
-    <h2>Hornet</h2>
-    <p><strong>나(Hornet)</strong>는 <i>형포를</i>을 좋아한다. 앞으로 형포 꿈에 나타나, 나만의 <b>세상</b>을 만들어볼 게획이다.<br>형포와 함께라면 무엇이든 가능하리라 믿는다. 아자아자 화이팅!</p>
-    <p>내가 누구냐구? <em><a href="https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%88%98%EB%A7%90%EB%B2%8C" title="hornet이란? 백과사전" target="_blank">여기</em></a>를 클릭해봐</p>
-    <img src="bee.png" width="30%">
+    <div id="grid">
+        <ol>
+            <li><a href="index.html">Main</li></a>
+            <li><a href="bumblebee.html">Bumblebee</li></a>
+            <li><a href="honeybee.html">Honey bee</li></a>
+            <li><a href="hornet.html" style="color: red; text-decoration: underline;"><strong>Hornet</strong></li></a>
+        </ol>
+        <div id="article">
+            <h2>Hornet</h2>
+            <p><strong>나(Hornet)</strong>는 <i>형포를</i>을 좋아한다. 앞으로 형포 꿈에 나타나, 나만의 <b>세상</b>을 만들어볼 게획이다.<br>형포와 함께라면 무엇이든 가능하리라 믿는다. 아자아자 화이팅!</p>
+            <p>내가 누구냐구? <em><a href="https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%88%98%EB%A7%90%EB%B2%8C" title="hornet이란? 백과사전" target="_blank">여기</em></a>를 클릭해봐</p>
+            <img src="bee.png" width="30%">
+        </div>
+    </div>
     <p>
-        <div id="disqus_thread"></div>
+        <div id="disqus_thread">
         <script>
             /**
             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -36,18 +40,46 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
     </p>
 </body>
 <style>
+    body {
+        margin: 0;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+        border-right: black solid 2px;
+        width: 120px;
+        margin: 0;
+        padding-top: 13px;
+        padding-left: 26px;
+    }
+    #article {
+        padding-left: 20px;
+    }
+    #grid li{
+
+        padding: 3px;
+    }
     h1 {
         text-align: center;
         font-size: 50px;
         color: black;
         text-decoration: none;
+        margin:0;
+        border-bottom: black solid 2px;
+        padding: 40px;
     }
     a {
         color: black;
         text-decoration: none;
+    }
+    #disqus_thread {
+        margin: 8px;
     }
 </style>
 
