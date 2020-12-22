@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol {
+  border-right: black solid 2px;
+  width: 120px;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 26px;
+}
+#article {
+  padding-left: 20px;
+}
+#grid li {
+  padding: 3px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  border-bottom: black solid 2px;
+  padding: 40px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#disqus_thread {
+  margin: 8px;
+}
+@media (max-width: 540px) {
+  #grid {
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  #article {
+    border-top: black solid 2px;
+  }
+}
